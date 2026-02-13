@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Quiz - RecycleRight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">♻️ RecycleRight</a>
+        <button class="mobile-menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="awareness.html">Why Recycle?</a>
+            <a href="guide.html">Materials Guide</a>
+            <a href="quiz.html" class="active">Quiz</a>
+            <a href="search.html">Search</a>
+            <a href="impact.html">Impact</a>
+            <a href="team.html">Team</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="quiz" class="card">
+            <h2>❓ Can This Be Recycled?</h2>
+            <div id="quiz-container">
+                <div id="quiz-question-area">
+                    <p id="quiz-item-name" class="highlight-text">Loading...</p>
+                    <div class="quiz-buttons">
+                        <button id="btn-yes" class="quiz-btn yes">Yes ✅</button>
+                        <button id="btn-no" class="quiz-btn no">No ❌</button>
+                    </div>
+                    <p id="quiz-feedback" class="hidden"></p>
+                </div>
+                <div id="quiz-score-area">
+                    <p>Score: <span id="score">0</span> / <span id="total-questions">0</span></p>
+                    <button id="restart-quiz" class="hidden">Restart Quiz</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RecycleRight. Recycle Responsibly.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Calculator - RecycleRight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">♻️ RecycleRight</a>
+        <button class="mobile-menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="awareness.html">Why Recycle?</a>
+            <a href="guide.html">Materials Guide</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="search.html">Search</a>
+            <a href="impact.html" class="active">Impact</a>
+            <a href="team.html">Team</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="impact-counter" class="card">
+            <h2>🌱 See Your Impact</h2>
+            <p>Enter what you've recycled this week:</p>
+
+            <div class="impact-inputs">
+                <div class="input-group">
+                    <label>Plastic Bottles</label>
+                    <input type="number" id="input-bottles" min="0" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label>Aluminum Cans</label>
+                    <input type="number" id="input-cans" min="0" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label>Newspapers (stacks)</label>
+                    <input type="number" id="input-paper" min="0" placeholder="0">
+                </div>
+            </div>
+
+            <div id="impact-results" class="hidden">
+                <h3>You Saved:</h3>
+                <div class="impact-metrics">
+                    <div class="metric">
+                        <span class="icon">⚡</span>
+                        <span id="res-energy">0</span> kWh Energy
+                    </div>
+                    <div class="metric">
+                        <span class="icon">💧</span>
+                        <span id="res-water">0</span> Gallons Water
+                    </div>
+                    <div class="metric">
+                        <span class="icon">🌲</span>
+                        <span id="res-trees">0</span> Trees
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RecycleRight. Recycle Responsibly.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
